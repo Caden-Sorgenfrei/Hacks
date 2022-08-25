@@ -1,5 +1,5 @@
 /**
- * Author: Connor Licht , Caden Sorgenfrei
+ * Author: Connor  Licht , Caden Sorgenfrei
  *         connorlicht@unomaha.edu , csorgenfrei@unomaha.edu
  * Date: 2022/08/23
  *
