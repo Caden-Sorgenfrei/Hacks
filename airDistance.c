@@ -12,6 +12,8 @@
 
 int main(int argc, char **argv) {
     double aLat, bLat, aLong, bLong;
+    double radianALat, radianALong, radianBLat, radianBLong;
+    double sinLat, cosLat;
 
     printf("Please input latitude of first location\n");
     scanf("%lf", &aLat);
@@ -25,6 +27,20 @@ int main(int argc, char **argv) {
     printf("Please input longitude of second location\n");
     scanf("%lf", &bLong);
 
+    radianALat = (aLat / 180) * M_PI;
+    //printf("%lf\n", radianALat);
+
+    radianALong = (aLong / 180) * M_PI;
+    //printf("%lf\n", radianALong);
+
+    radianBLat = (bLat / 180) * M_PI;
+    //printf("%lf\n", radianBLat);
+
+    radianBLong = (bLong / 180) * M_PI;
+    //printf("%lf\n", radianBLong);
+
+    sinLat = sin(radianALat) * sin(radianBLat);
+    cosLat = cos(radianALat) * cos(radianBLat);
     
   return 0;
 }
