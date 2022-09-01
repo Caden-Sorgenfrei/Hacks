@@ -11,8 +11,10 @@
 #include <math.h>
 
 int main(int argc, char **argv) {
+    double aLat, bLat, aAong, bLong;
 
-
+    printf("Please input latitude of first location\n");
+    scanf("%lf", &aLat);
 
   return 0;
 }
