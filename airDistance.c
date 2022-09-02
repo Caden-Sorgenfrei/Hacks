@@ -31,33 +31,30 @@ int main(int argc, char **argv) {
 
     //Converts degrees to radian
     radianALat = (aLat / 180) * M_PI;
-    //printf("%lf\n", radianALat);
     radianALong = (aLong / 180) * M_PI;
-    //printf("%lf\n", radianALong);
     radianBLat = (bLat / 180) * M_PI;
-    //printf("%lf\n", radianBLat);
     radianBLong = (bLong / 180) * M_PI;
-    //printf("%lf\n", radianBLong);
 
-    //Calculation for arcos(sinLatA)(sinLatB) = x
+    //Calculations for later equations
 
     sinLat = sin(radianALat) * sin(radianBLat);
     cosLat = cos(radianALat) * cos(radianBLat);
-
-    printf("%lf\n", sinLat);
-    printf("%lf\n", cosLat);
-
-    // Claculation for cos(LatA)cos(Latb)(CosDelta)(R)
-
     cosDelta = cos(radianBLong - radianALong);
-    printf("%lf\n", cosDelta);
+
 
     double distance;
     distance = acos(sinLat + ( cosLat * cosDelta )) * r ;
 
 
 
-    printf("%lf\n", distance);
+    // End Menu print screen
+
+    printf("How far you have to go, enjoy\n");
+        // Plus hell
+    printf("+++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+    printf("You started at: (%lf , %lf)\n" , aLat , aLong );
+    printf("Your destination is at: (%lf , %lf)\n", bLat , bLong);
+    printf("Air Distnace: %lf kmsc\n", distance);
 
 
   return 0;
